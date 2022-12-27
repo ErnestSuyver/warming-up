@@ -8,3 +8,27 @@ This repository is built step by step in the tutorial.
 Great.
 
 Here is another bit of text.
+
+
+<script src="//unpkg.com/@tpluscode/wc-runkit"></script>
+
+<run-kit>
+  <pre>
+const hello = require("simple-hello-world-example")
+
+myApp.printMsg()
+  </pre>
+</run-kit>
+
+
+or maybe
+
+<run-kit>
+
+  ```js
+const hello = require("simple-hello-world-example")
+
+myApp.printMsg()
+  ```
+  
+</run-kit>
