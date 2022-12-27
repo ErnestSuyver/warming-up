@@ -16,5 +16,31 @@
     <p>This is a new line for a new branch. Huzzah!</p>
     <p>And another one!!</p>
 
+    <h1>careful now</h1>
+    <script src="//unpkg.com/@tpluscode/wc-runkit"></script>
+
+
+<run-kit>
+  <pre>
+const hello = require("simple-hello-world-example")
+
+myApp.printMsg()
+  </pre>
+</run-kit>
+
+    <p>When using in a static-page generator, you might use triple backticks instead of `<pre>` 
+    to have the highlighted code be displayed until runkit initializes its embed.</p>
+
+<run-kit>
+
+  ```js
+const hello = require("simple-hello-world-example")
+
+myApp.printMsg()
+  ```
+  
+</run-kit>
+    
+    
 </body>
 </html> 
