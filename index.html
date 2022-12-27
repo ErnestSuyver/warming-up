@@ -16,6 +16,56 @@
     <p>This is a new line for a new branch. Huzzah!</p>
     <p>And another one!!</p>
 
+    
+    
+<h1>careful now</h1>
+ <script src="//unpkg.com/@tpluscode/wc-runkit"></script>
+  <run-kit>
+   <pre>
+   
+   // Let's show where the Internation Space Station currently is.
+console.log("Let's see where the ISS is with Node " + process.version);
+
+// We can use any package from NPM since they are all built in.
+var getJSON = require("async-get-json"); 
+
+// And we can use ES7 async/await to pull the ISS's position from the open API.
+var result = await getJSON("http://api.open-notify.org/iss-now.json");
+
+// RunKit will automatically display the last statement and try to find its best representation:
+result.iss_position;
+   
+   </pre>
+  </run-kit>
+ 
+   <!-- 
+<h1>careful now</h1>
+ <script src="//unpkg.com/@tpluscode/wc-runkit"></script>
+  <run-kit>
+   <pre>
+   
+   </pre>
+  </run-kit>
+ 
+<h1>careful now</h1>
+ <script src="//unpkg.com/@tpluscode/wc-runkit"></script>
+  <run-kit>
+   <pre>
+   
+   </pre>
+  </run-kit>
+ 
+<h1>careful now</h1>
+ <script src="//unpkg.com/@tpluscode/wc-runkit"></script>
+  <run-kit>
+   <pre>
+   
+   </pre>
+  </run-kit>
+ -->
+
+    
+    <!--
     <h1>careful now</h1>
     <script src="//unpkg.com/@tpluscode/wc-runkit"></script>
 
@@ -27,7 +77,9 @@ const hello = require("simple-hello-world-example")
 myApp.printMsg()
   </pre>
 </run-kit>
+-->
 
+    <!--
     <p>When using in a static-page generator, you might use triple backticks instead of `<pre>` 
     to have the highlighted code be displayed until runkit initializes its embed.</p>
 
@@ -40,7 +92,7 @@ myApp.printMsg()
   ```
   
 </run-kit>
-    
+    -->
     
 </body>
 </html> 
